@@ -1605,7 +1605,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
    * @param value new value
    */
   public <T extends Enum<T>> void setEnum(String name, T value) {
-    set(name, value.toString());
+    set(name, value.name());
   }
 
   /**
